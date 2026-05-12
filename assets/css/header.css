@@ -97,16 +97,12 @@ a {
   visibility: hidden;
 
   transition: 0.3s ease;
-  z-index: 10000;
+  z-index: 998;
 }
 
 .overlay.active {
   opacity: 1;
   visibility: visible;
-}
-
-body.menu-open {
-  overflow: hidden;
 }
 
 .nav-menu.active {
@@ -124,7 +120,7 @@ body.menu-open {
   height: 100vh;
   overflow-x: hidden;
   
-  z-index: 10001;
+  z-index: 999;
 
   transform: translateX(100%);
   visibility: hidden;
