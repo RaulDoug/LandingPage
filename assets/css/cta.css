@@ -52,6 +52,12 @@
   width: 95%;
   color: var(--cor1-empresa);
   border-radius: 10px;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 15px -3px rgba(42,42,42,0.75);
 }
 
 .cta-btn i {
