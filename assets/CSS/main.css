@@ -1,0 +1,15 @@
+/* Base */
+@import url('./variables.css');
+@import url('./styles.css');
+
+/* Layout */
+@import url('./header.css');
+
+/* Seções */
+@import url('./hero.css');
+@import url('./services.css');
+@import url('./about.css');
+@import url('./gallery.css');
+@import url('./testimonials.css');
+@import url('./cta.css');
+@import url('./footer.css');

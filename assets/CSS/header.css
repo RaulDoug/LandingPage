@@ -1,0 +1,395 @@
+/* HEADER MOBILE 375px */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: var(--header-height);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.6rem;
+  align-items: center;
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: clamp(0.5rem, 3vw, 1.2rem);
+}
+
+.header-logo img {
+  width: 6rem;
+  height: 3rem;
+}
+
+.whatsapp-btn {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--texto-principal-claro);
+  background-color: var(--cor1-empresa);
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+
+.whatsapp-btn p {
+  font-size: 0.7rem;
+  background-color: transparent;
+}
+
+.whatsapp-btn i {
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.bars-icon {
+  font-size: 35px;
+  color: var(--cor1-empresa);
+}
+
+#menu-open-btn {
+  border: none;
+  border-radius: 10px;
+}
+
+#menu-open-btn:active .bars-icon {
+  color: var(--cor2-empresa);
+}
+
+/* MENU LATERAL */
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--texto-secundario);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.6); /* 🔥 intensidade do escuro */
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s ease;
+  z-index: 998;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-menu.active {
+  transform: translateX(0); /* entra na tela */
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 80%;
+  height: 100vh;
+  overflow-x: hidden;
+  
+  z-index: 999;
+
+  transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  padding: 1.2rem;
+
+  border-radius: 15px;
+}
+
+.nav-menu * {
+  z-index: 999;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.nav-logo img {
+  width: 6rem;
+  height: 3rem;
+}
+
+.close-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: var(--cor1-empresa);
+  width: 40px;
+  height: 40px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  box-shadow: 0px 3px 15px -2px rgba(88, 88, 88, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.close-menu-btn:active {
+  background-color: var(--cor1-empresa);
+  color: var(--texto-principal-claro);
+}
+
+.close-menu-btn i {
+  text-align: center;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--texto-secundario);
+  width: 100%;
+  padding: 0.3rem 0.3rem 0.5rem;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ececec; 
+}
+
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-text-nav {
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.icon-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  color: var(--cor1-empresa);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateY(1px);
+}
+
+.nav-item:active {
+  color: var(--cor1-empresa);
+  border-radius: 10px;
+}
+
+.nav-item:active .icon-nav {
+  background-color: var(--cor1-empresa);
+  color: var(--texto-principal-claro);
+}
+
+.arrow-nav {
+  color: var(--cor1-empresa);
+}
+
+.whatsapp-btn-nav {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: var(--texto-principal-claro);
+  background-color: var(--cor1-empresa);
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+
+.whatsapp-btn-nav * {
+  background-color: transparent;
+}
+
+.whatsapp-btn-nav i {
+  font-size: 1.5rem;
+}
+
+.nav-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.nav-social-info {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-content-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0.3rem;
+  border: 1px solid #ececec;
+  padding: 0.5rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+.nav-content-info i {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #ececec;
+  color: var(--cor1-empresa);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(1px);
+}
+
+.nav-content-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-content-right h4 {
+  font-size: 0.9rem;
+  color: var(--cor1-empresa);
+}
+
+.nav-content-right p {
+  font-size: 0.75rem;
+  color: var(--texto-secundario);
+}
+
+.nav-link-info {
+  width: 30px;
+  height: 30px;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: #ececec;
+  color: var(--texto-secundario);
+  border-radius: 8px;
+}
+
+/* ----------------FIM MENU LATERAL---------------- */
+
+/* ----------------HEADER 768px---------------- */
+
+@media (min-width: 767px) {
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: clamp(0.6rem, 2vw, 1.5rem);
+    padding: 0.5rem;
+  }
+
+  .header-logo {
+    padding-left: 0.5rem;
+    flex: 0 0 auto;
+  }
+
+  .bars-icon {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.35rem, 1vw, 0.6rem);
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .nav a {
+    display: flex;
+    text-decoration: none;
+    font-size: clamp(0.85rem, 1.35vw, 1.01rem);
+    color: var(--texto-secundario);
+    white-space: nowrap;
+  }
+
+  .nav-menu,
+  .overlay {
+    display: none;
+  }
+
+  .whatsapp-btn {
+    display: flex;
+    padding: 0.5rem;
+    flex: 0 0 auto;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-right: 0;
+  }
+
+  .whatsapp-btn p {
+    font-size: 0.75rem;
+  }
+  .whatsapp-btn i {
+    font-size: 1.5rem;
+  }
+
+}

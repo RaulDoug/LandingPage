@@ -1,0 +1,78 @@
+/* RESET PADRÃO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-principal);
+  background-color: var(--fundo-secundario3);
+}
+
+:root {
+  --header-height: 84px;
+}
+
+@media (min-width: 767px) {
+
+  :root {
+    --header-height: 64px;
+  }
+
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--fundo-secundario3);
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: var(--header-height);
+  overflow-x: hidden;
+}
+
+.destaque {
+  color: var(--cor1-empresa);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0.7rem 0;
+  background-color: transparent;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: 0.3s;
+}
+
+/* dot ativo */
+.dot.active {
+  width: 18px;
+  border-radius: 10px;
+  background-color: var(--cor1-empresa);
+  transform: scale(1.2);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 16px);
+  overflow-x: hidden;
+}
+
+#hero,
+#services,
+#about,
+#gallery,
+#testimonials {
+  scroll-margin-top: calc(var(--header-height) + 16px);
+}

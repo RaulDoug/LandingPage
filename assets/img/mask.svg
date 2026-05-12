@@ -1,0 +1,14 @@
+<!-- ONDA SUAVE 1 -->
+<svg viewBox="0 0 500 800" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill="white"
+    d="
+      M70,0
+      C25,140 25,260 70,400
+      C115,540 25,660 70,800
+      L500,800
+      L500,0
+      Z
+    "
+  />
+</svg>

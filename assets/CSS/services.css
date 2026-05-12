@@ -1,0 +1,116 @@
+/* SERVICES MOBILE 375px */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.7rem;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--fundo-secundario3);
+}
+
+.service-detail {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--cor1-empresa);
+  font-weight: bold;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--texto-secundario);
+  margin-bottom: 1.5rem;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.item-service {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.icon-box {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 3rem;
+}
+
+.icon-box i {
+  color: var(--cor1-empresa);
+  font-size: 2.5rem;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.item-description h4 {
+  font-size: 0.85rem;
+  color: var(--cor1-empresa);
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+.item-description p {
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+/* SERVICES TABLET 768px */
+@media (min-width: 767px) {
+
+  .services {
+    padding: 1rem 0.7rem;
+  }
+
+  .services * {
+    background-color: transparent;
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .item-service {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo-principal);
+    padding: 0.5rem;
+    border-radius: 20px;
+  }
+
+  .icon-box i {
+    font-size: 2.2rem;
+  }
+
+  .item-description h4 {
+    font-size: 0.7rem;
+  }
+
+  .item-description p {
+    font-size: 0.7rem;
+  }
+
+}
