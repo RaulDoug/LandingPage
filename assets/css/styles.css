@@ -8,13 +8,15 @@
 }
 
 :root {
-  --header-height: 84px;
+  --header-height: 74px;
+  --scroll-offset: 74px;
 }
 
 @media (min-width: 767px) {
 
   :root {
-    --header-height: 10px;
+    --header-height: 64px;
+    --scroll-offset: 64px;
   }
 
 }
@@ -69,7 +71,7 @@ main {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 16px);
+  scroll-padding-top: var(--scroll-offset);
   overflow-x: hidden;
 }
 
@@ -78,5 +80,5 @@ html {
 #about,
 #gallery,
 #testimonials {
-  scroll-margin-top: calc(var(--header-height) + 16px);
+  scroll-margin-top: var(--scroll-offset);
 }
