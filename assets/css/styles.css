@@ -8,13 +8,13 @@
 }
 
 :root {
-  --header-height: 84px;
+  --header-height: 20px;
 }
 
 @media (min-width: 767px) {
 
   :root {
-    --header-height: 10px;
+    --header-height: 64px;
   }
 
 }
