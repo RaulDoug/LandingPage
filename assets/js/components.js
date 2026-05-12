@@ -1,13 +1,13 @@
 const components = [
-  {id: 'header', file: '/components/header.html'},
-  {id: 'hero', file: '/components/sections/hero.html'},
-  {id: 'services', file: '/components/sections/services.html'},
-  {id: 'about', file: '/components/sections/about.html'},
-  {id: 'gallery', file: '/components/sections/gallery.html'},
-  {id: 'testimonials', file: '/components/sections/testimonials.html'},
-  {id: 'cta', file: '/components/sections/cta.html'},
-  {id: 'whatsapp-btn', file: '/components/sections/whatsapp-btn.html'},
-  {id: 'footer', file: '/components/footer.html'},
+  {id: 'header', file: './components/header.html'},
+  {id: 'hero', file: './components/sections/hero.html'},
+  {id: 'services', file: './components/sections/services.html'},
+  {id: 'about', file: './components/sections/about.html'},
+  {id: 'gallery', file: './components/sections/gallery.html'},
+  {id: 'testimonials', file: './components/sections/testimonials.html'},
+  {id: 'cta', file: './components/sections/cta.html'},
+  {id: 'whatsapp-btn', file: './components/sections/whatsapp-btn.html'},
+  {id: 'footer', file: './components/footer.html'},
 ]
 
 export async function loadComponent(id, file) {

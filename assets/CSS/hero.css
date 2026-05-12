@@ -157,10 +157,10 @@
     overflow: hidden;
 
     /* máscara */
-    -webkit-mask: url('/assets/img/mask.svg') no-repeat center;
+    -webkit-mask: url('../img/mask.svg') no-repeat center;
     -webkit-mask-size: cover;
 
-    mask: url('/assets/img/mask.svg') no-repeat center;
+    mask: url('../img/mask.svg') no-repeat center;
     mask-size: cover;
   }
 
