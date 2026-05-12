@@ -114,3 +114,29 @@
   }
 
 }
+
+
+/* SERVICES DESKTOP 1024px */
+@media (min-width: 1024px) {
+
+  .service-detail {
+    font-size: 1.2rem;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+  }
+
+  .icon-box i {
+    font-size: 2.2rem;
+  }
+
+  .item-description h4 {
+    font-size: 0.9rem;
+  }
+
+  .item-description p {
+    font-size: 0.8rem;
+  }
+
+}

@@ -7,8 +7,6 @@ a {
 #header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 9999;
   width: 100%;
   height: var(--header-height);
@@ -323,7 +321,7 @@ a {
 
 /* ----------------FIM MENU LATERAL---------------- */
 
-/* ----------------HEADER 768px---------------- */
+/* ----------------HEADER TABLET 768px---------------- */
 
 @media (min-width: 767px) {
 
@@ -371,6 +369,11 @@ a {
     white-space: nowrap;
   }
 
+  .nav-link:hover {
+    cursor: pointer;
+    color: var(--cor1-empresa);
+  }
+
   .nav-menu,
   .overlay {
     display: none;
@@ -390,6 +393,39 @@ a {
   .whatsapp-btn p {
     font-size: 0.75rem;
   }
+  .whatsapp-btn i {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* ----------------HEADER DESKTOP 1024px---------------- */
+@media (min-width: 1024px) {
+
+  .header {
+    padding: 0 2rem;
+  }
+
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+  }
+
+  .header-logo {
+    margin-left: -2rem;
+  }
+
+  .whatsapp-btn:hover {
+    box-shadow: 4px 4px 15px -3px rgba(42,42,42,0.75);
+  }
+
+  .whatsapp-btn p {
+    font-size: 1rem;
+  }
+
   .whatsapp-btn i {
     font-size: 1.5rem;
   }

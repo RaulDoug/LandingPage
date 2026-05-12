@@ -132,3 +132,41 @@
     object-fit: cover;
   }
 }
+
+/* ABOUT DESKTOP 1024px */
+@media (min-width: 1024px) {
+
+  .about-detail {
+    align-items: center;
+  }
+
+  .about-detail p {
+    font-size: 1.2rem;
+  }
+
+  .about-detail img {
+    width: 2.8rem;
+    height: 2.3rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-desc {
+    font-size: 1.1rem;
+  }
+
+  .about-check-list {
+    padding-top: 1rem;
+  }
+
+  .about-check-item i {
+    font-size: 1.6rem;
+  }
+
+  .about-check-item p {
+    font-size: 1rem;
+  }
+
+}
