@@ -105,6 +105,10 @@ a {
   visibility: visible;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 .nav-menu.active {
   transform: translateX(0); /* entra na tela */
   visibility: visible;

@@ -10,11 +10,14 @@ window.initMenu = function () {
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav-item')
 
-  if (!menuOpenBtn) return;
+  if (!menuOpenBtn || !menuCloseBtn || !overlay || !navMenu) return;
+
+  document.body.append(overlay, navMenu);
 
   function sideBar() {
     overlay.classList.toggle('active');
     navMenu.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
   }
 
 
