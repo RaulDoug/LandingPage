@@ -87,6 +87,11 @@
   border-radius: 10px;
 }
 
+.whatsapp-btn-hero:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 15px -3px rgba(42,42,42,0.75);
+}
+
 .whatsapp-btn-hero i,
 .whatsapp-btn-hero p {
   background-color: transparent;

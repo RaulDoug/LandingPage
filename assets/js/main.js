@@ -37,6 +37,24 @@ window.initGallery = function () {
   const dotsContainer = document.querySelector('.dots');
   const nextBtn = document.getElementById('nextBtn');
   const previusBtn = document.getElementById('previusBtn');
+  const lightbox = document.getElementById('galleryLightbox');
+  const lightboxImg = document.getElementById('galleryLightboxImg');
+
+  function openLightbox(image) {
+    lightboxImg.src = image;
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('gallery-lightbox-open');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImg.src = '';
+    document.body.classList.remove('gallery-lightbox-open');
+  }
+
+
 
   if (!galleryContainer || !dotsContainer || !nextBtn || !previusBtn) return;
 
@@ -50,11 +68,32 @@ window.initGallery = function () {
     const div = document.createElement('div');
     div.classList.add('gallery-images');
 
-    div.innerHTML = `<img src="${image}" alt="Serviço realizado">`
+    const img = document.createElement('img');
+    img.src = image;
+    img.alt = 'Serviço realizado';
+
+    img.addEventListener('click', () => {
+      openLightbox(image);
+    });
+
+    div.appendChild(img);
 
     galleryContainer.appendChild(div);
 
   })
+
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && lightbox.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+
 
   const slides = document.querySelectorAll('.gallery-images');
 
