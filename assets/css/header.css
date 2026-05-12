@@ -14,6 +14,10 @@ a {
   height: var(--header-height);
 }
 
+.header-with-sidebar {
+  z-index: 9000;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -97,7 +101,7 @@ a {
   visibility: hidden;
 
   transition: 0.3s ease;
-  z-index: 998;
+  z-index: 9999;
 }
 
 .overlay.active {

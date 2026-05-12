@@ -9,12 +9,14 @@ window.initMenu = function () {
   const overlay = document.getElementById('overlay');
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav-item')
+  const header = document.querySelector('.header');
 
   if (!menuOpenBtn) return;
 
   function sideBar() {
     overlay.classList.toggle('active');
     navMenu.classList.toggle('active');
+    header.classList.toggle('header-with-sidebar');
   }
 
 
