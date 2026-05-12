@@ -69,7 +69,7 @@ main {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height));
+  scroll-padding-top: calc(var(--header-height) + 16px);
   overflow-x: hidden;
 }
 
@@ -78,5 +78,5 @@ html {
 #about,
 #gallery,
 #testimonials {
-  scroll-margin-top: calc(var(--header-height));
+  scroll-margin-top: calc(var(--header-height) + 16px);
 }
