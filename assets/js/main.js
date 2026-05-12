@@ -39,6 +39,7 @@ window.initGallery = function () {
   const previusBtn = document.getElementById('previusBtn');
   const lightbox = document.getElementById('galleryLightbox');
   const lightboxImg = document.getElementById('galleryLightboxImg');
+  const lightboxCloseBtn = document.getElementById('galleryLightboxClose');
 
   function openLightbox(image) {
     lightboxImg.src = image;
@@ -87,6 +88,8 @@ window.initGallery = function () {
       closeLightbox();
     }
   });
+
+  lightboxCloseBtn.addEventListener('click', closeLightbox);
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && lightbox.classList.contains('active')) {

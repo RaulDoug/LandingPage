@@ -145,6 +145,28 @@
   background-color: transparent;
 }
 
+.gallery-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  color: var(--cor1-empresa);
+  background-color: var(--fundo-principal);
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gallery-lightbox-close i {
+  background-color: transparent;
+}
+
 .gallery-images img {
   cursor: zoom-in;
 }
