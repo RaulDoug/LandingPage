@@ -14,7 +14,7 @@
 @media (min-width: 767px) {
 
   :root {
-    --header-height: 64px;
+    --header-height: 10px;
   }
 
 }
