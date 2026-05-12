@@ -124,7 +124,7 @@ a {
   height: 100vh;
   overflow-x: hidden;
   
-  z-index: 999;
+  z-index: 9999;
 
   transform: translateX(100%);
   visibility: hidden;
@@ -136,7 +136,7 @@ a {
 }
 
 .nav-menu * {
-  z-index: 999;
+  z-index: 99999;
 }
 
 .nav-logo {
