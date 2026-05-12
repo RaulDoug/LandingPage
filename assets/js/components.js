@@ -6,7 +6,6 @@ const components = [
   {id: 'gallery', file: './components/sections/gallery.html'},
   {id: 'testimonials', file: './components/sections/testimonials.html'},
   {id: 'cta', file: './components/sections/cta.html'},
-  {id: 'whatsapp-btn', file: './components/sections/whatsapp-btn.html'},
   {id: 'footer', file: './components/footer.html'},
 ]
 
@@ -18,8 +17,14 @@ export async function loadComponent(id, file) {
       throw new Error(`Erro ao carregar ${file}`);
     }
 
+    const target = document.getElementById(id);
+
+    if (!target) {
+      throw new Error(`Elemento #${id} não encontrado`);
+    }
+
     const html = await res.text();
-    document.getElementById(id).innerHTML = html;
+    target.innerHTML = html;
 
   } catch (err) {
     console.error(err);
@@ -31,9 +36,9 @@ async function loadAllComponents() {
     await loadComponent(c.id, c.file);
   }
 
-  initMenu();
-  initGallery();
-  initTestimonials();
+  window.initMenu?.();
+  window.initGallery?.();
+  window.initTestimonials?.();
 }
 
 loadAllComponents();

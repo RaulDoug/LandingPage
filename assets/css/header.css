@@ -12,8 +12,6 @@ a {
   z-index: 9999;
   width: 100%;
   height: var(--header-height);
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
 }
 
 .header {
