@@ -17,6 +17,7 @@ window.initMenu = function () {
     overlay.classList.toggle('active');
     navMenu.classList.toggle('active');
     header.classList.toggle('header-with-sidebar');
+    document.body.classList.toggle('menu-open');
   }
 
 
